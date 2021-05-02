@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  max-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.flexible-modal {
+  position: fixed;
+  z-index: 50000;
+  opacity: .9;
+}
+.flexible-modal-resizer {
+  position:absolute;
+  right:0;
+  bottom:0;
+  cursor:se-resize;
+  margin:5px;
+  border-bottom: solid 2px #333;
+  border-right: solid 2px #333;
+}
+.flexible-modal-drag-area{
+  background: lightGrey;
+  height: 30px;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  cursor:move;
+  border-radius: .15em;
+  max-height: 30px;
+}
+
+.chatWindow {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 190;
+  background: rgb(233, 229, 229);
+  border-radius: 5px;
+}
+.chatInputWrapper {
+  display: grid;
+  grid-row-start: 190;
+  grid-row-end: 190;
+}
+/* M E S S A G E S */
+.speech-bubble-ds {
+  background: #F5F5F5;
+  border: 1px solid #a7a7a7;
+  border-radius: .25em;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 16px;
+  margin: 10px;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  max-width: 200px;
+  padding: 5px;
+  position: flex;
+  width: 100%;
+}
